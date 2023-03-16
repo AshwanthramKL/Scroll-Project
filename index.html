@@ -13,7 +13,80 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>scroll project</h1>
+    <!-- header -->
+    <header id="home">
+       <!-- Navbar -->
+       <nav id="nav">
+          <div class="nav-center">
+            <div class="nav-header">
+              <img src="./images/logo.svg" alt="logo" class="logo">
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <!-- links -->
+            <div class="links-container">
+              <ul class="links">
+                <li>
+                  <a href="#home" class="scroll-link">home</a>
+                </li>
+                <li>
+                  <a href="#about" class="scroll-link">about</a>
+                </li>
+                <li>
+                  <a href="#services" class="scroll-link">services</a>
+                </li>
+                <li>
+                  <a href="#tours" class="scroll-link">tours</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+       </nav>
+
+       <div class="banner">
+        <div class="container">
+          <h1>Scroll project</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eum amet debitis? Voluptatibus exercitationem dolor quis est, accusamus id minima.</p>
+          <a href="#tours" class="btn btn-white scroll-link">Explore tours</a>
+        </div>
+       </div>
+    </header>
+
+    <!-- about -->
+    <section class="section" id="about">
+      <div class="title">
+        <h2>About <span>Us</span></h2>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="section" id="services">
+      <div class="title">
+        <h2>Our <span>Services</span></h2>
+      </div>
+    </section>
+
+    <!-- tours -->
+    <section class="section" id="tours">
+      <div class="title">
+        <h2>Featured <span>Tours</span></h2>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; backroads Travel Tours Company <span id="date">2020</span>. All Rights Reserved
+      </p>
+    </footer>
+
+    <!-- back to top button -->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
