@@ -276,6 +276,7 @@ nav {
     display: none;
   }
   .links-container {
+    /* !important is used to add priority over inline css as the css changes made with js are inline but we don't want our links container to be large in full screen. */
     height: auto !important;
   }
   .links {
