@@ -19,23 +19,22 @@ This is a solution to the Scroll project which is a part of John Smilga's 15 JS 
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View the Video and the control button.
-- Pause and play the video on click of control button.
-
-
+- View the optimal layout for the app depending on their device's screen size.
+- See hover states for all interactive elements on the page.
+- Scroll through the different sections of the website.
+- Use the links to navigate to the sections.
+- View the fixed navbar and scroll-to-top button on scrolling beyond a certain point
 ### Screenshot
 
 #### Full Screen
-![Full screen](./resources/Website_preview.jpg)
+![Full screen](./images/Website_preview.jpg)
 #### Paused Video Display
-![Paused screen](./resources/Paused_view.jpg)
+![Paused screen](./images/Fixed_navbar.jpg)
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/AshwanthramKL/Video)
-- Live Site URL: [Live site URL](https://ashwanthramkl.github.io/Video/)
+- Solution URL: [Solution URL](https://github.com/AshwanthramKL/Scroll-Project)
+- Live Site URL: [Live site URL]()
 
 ## My process
 
