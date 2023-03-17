@@ -50,3 +50,22 @@ window.addEventListener('scroll', ()=>{
 
 // ********** smooth scroll ************
 // select links
+// Just smooth scroll doesn't suffice because it skips the heading
+
+const scrollLinks = document.querySelectorAll('.scroll-link');
+
+scrollLinks.forEach((link)=>{
+    link.addEventListener('click', (e)=>{
+        e.preventDefault();
+        // navigate to specific section
+        const id = link.getAttribute('href');
+        console.log(id);
+        const element = document.querySelector(`${id}`);
+        const position = element.offsetTop;
+
+        window.scrollTo({
+            left:0,
+            top: position,
+        })
+    })
+})
