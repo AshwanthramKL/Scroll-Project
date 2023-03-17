@@ -59,13 +59,29 @@ scrollLinks.forEach((link)=>{
         e.preventDefault();
         // navigate to specific section
         const id = link.getAttribute('href');
-        console.log(id);
         const element = document.querySelector(`${id}`);
-        const position = element.offsetTop;
+        // calculate heights
+        const navHeight = navbar.getBoundingClientRect().height;
+        const containerHeight = linksContainer.getBoundingClientRect().height;
+        const fixedNav = navbar.classList.contains('fixed-nav');
+        
+        var position = element.offsetTop - navHeight;
 
+        // if navbar is fixed then we'd have to subract some distance
+        if(!fixedNav){
+            position = position - navHeight;
+        }
+
+        // Setting up for smaller screen
+        if(navHeight > 82){ // 82 -> container is open
+            position = position + containerHeight;
+        }
         window.scrollTo({
             left:0,
             top: position,
-        })
-    })
-})
+        });
+
+        linksContainer.style.height = 0;
+    });
+});
+
